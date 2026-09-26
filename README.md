@@ -1,32 +1,32 @@
-🏋️ FitLog
+# 🏋️ FitLog
 
-«A dark-themed workout library and workout planning application built with Next.js.»
+> A dark-themed workout library and workout planning application built with Next.js.
 
 FitLog is a simple and modern workout companion where users can explore workouts, view detailed exercise information, add workouts to today's plan, save workouts for later, and manage their workout routine.
 
 ---
 
-🌐 Live Website
+## 🌐 Live Website
 
-🔗 Live Demo: [Add your Vercel Live Link Here]
+🔗 **Live Demo:** [Add your Vercel Live Link Here]
 
-🔗 GitHub Repository: https://github.com/webrakib16/b14-a6-next-fitlog
+🔗 **GitHub Repository:** https://github.com/webrakib16/b14-a6-next-fitlog
 
 ---
 
-📌 About The Project
+## 📌 About The Project
 
 FitLog is built to make workout planning simple and organized.
 
-Users can browse a workout library, check complete workout details, add exercises to today's plan, save exercises for later, and manage their selected workouts from the My Plan page.
+Users can browse a workout library, check complete workout details, add exercises to today's plan, save exercises for later, and manage their selected workouts from the **My Plan** page.
 
 The project follows a dark gym-focused UI with a simple and responsive design.
 
 ---
 
-✨ Key Features
+## ✨ Key Features
 
-🏋️ Workout Library
+### 🏋️ Workout Library
 
 - Browse available workouts
 - View workout images
@@ -35,7 +35,7 @@ The project follows a dark gym-focused UI with a simple and responsive design.
 - See duration, calories, and rating
 - Click any workout to view its full details
 
-📋 Today's Plan
+### 📋 Today's Plan
 
 - Add workouts to today's plan
 - View all planned workouts
@@ -45,14 +45,14 @@ The project follows a dark gym-focused UI with a simple and responsive design.
 - Mark workouts as done
 - Remove workouts from the plan
 
-💾 Save For Later
+### 💾 Save For Later
 
 - Save workouts for later
 - View saved workouts from the Saved tab
 - Remove saved workouts
 - Saved workout count is displayed in the Navbar
 
-🔎 Workout Details
+### 🔎 Workout Details
 
 Each workout has a dedicated details page containing:
 
@@ -68,7 +68,7 @@ Each workout has a dedicated details page containing:
 - Rating
 - Workout instructions
 
-↕️ Workout Sorting
+### ↕️ Workout Sorting
 
 Workouts in My Plan can be sorted by:
 
@@ -76,9 +76,9 @@ Workouts in My Plan can be sorted by:
 - Calories
 - Rating
 
-The default sorting option is Duration.
+The default sorting option is **Duration**.
 
-🔔 Toast Notifications
+### 🔔 Toast Notifications
 
 Toast notifications are shown when users:
 
@@ -90,20 +90,20 @@ Toast notifications are shown when users:
 
 ---
 
-🛠️ Technologies Used
+## 🛠️ Technologies Used
 
-- Next.js
-- React
-- TypeScript
-- Tailwind CSS
-- DaisyUI
-- Context API
-- React Toastify
-- REST API
+- **Next.js**
+- **React**
+- **TypeScript**
+- **Tailwind CSS**
+- **DaisyUI**
+- **Context API**
+- **React Toastify**
+- **REST API**
 
 ---
 
-🧩 Main Concepts Used
+## 🧩 Main Concepts Used
 
 This project uses the following concepts:
 
@@ -111,8 +111,8 @@ This project uses the following concepts:
 - React Components
 - Props
 - State Management
-- "useState"
-- "useEffect"
+- `useState`
+- `useEffect`
 - Event Handling
 - Conditional Rendering
 - Array Methods
@@ -128,8 +128,9 @@ This project uses the following concepts:
 
 ---
 
-📂 Project Structure
+## 📂 Project Structure
 
+```text
 FitLog/
 │
 ├── public/
@@ -170,35 +171,66 @@ FitLog/
 ├── README.md
 ├── tsconfig.json
 └── next.config.ts
+```
 
 ---
 
-🚀 Getting Started
+## 🚀 Getting Started
 
-First, run the development server:
+First, clone the repository:
 
+```bash
+git clone https://github.com/webrakib16/b14-a6-next-fitlog.git
+```
+
+Then, go to the project directory:
+
+```bash
+cd b14-a6-next-fitlog
+```
+
+Install the dependencies:
+
+```bash
+npm install
+```
+
+Run the development server:
+
+```bash
 npm run dev
+```
 
-Then open "http://localhost:3000" (http://localhost:3000) with your browser to see the result.
+Then open:
+
+```text
+http://localhost:3000
+```
+
+in your browser to see the result.
 
 ---
 
-🔗 API
+## 🔗 API
 
-FitLog API
+### FitLog API
 
-All Workout Data:
+#### All Workout Data
 
+```text
 https://api.abcz.workers.dev/api/fitlog
+```
 
-Single Workout Details:
+#### Single Workout Details
 
+```text
 https://api.abcz.workers.dev/api/fitlog/:id
+```
 
 ---
 
-👨‍💻 Author
+## 👨‍💻 Author
 
-Rakib
+**Rakib**
 
-GitHub: https://github.com/webrakib16
+🔗 GitHub: https://github.com/webrakib16

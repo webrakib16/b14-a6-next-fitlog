@@ -20,7 +20,10 @@ const Workouts = async () => {
   const workoutsData = await getWorkouts();
 
   return (
-    <section className="container mx-auto my-[70px] px-4">
+    <section
+      id="library"
+      className="container mx-auto my-[70px] px-4"
+    >
       {/* Section Title */}
       <div className="mb-6">
         <h2 className="text-3xl font-extrabold text-white">

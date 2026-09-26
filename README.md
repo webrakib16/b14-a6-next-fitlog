@@ -8,7 +8,7 @@ FitLog is a simple and modern workout companion where users can explore workouts
 
 ## 🌐 Live Website
 
-🔗 **Live Demo:** [Add your Vercel Live Link Here]
+🔗 **Live Demo:** https://b14-a6-next-fitlog.vercel.app/
 
 🔗 **GitHub Repository:** https://github.com/webrakib16/b14-a6-next-fitlog
 

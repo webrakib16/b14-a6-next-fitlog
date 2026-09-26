@@ -35,6 +35,10 @@ const MyPlan = () => {
       return a.caloriesBurned - b.caloriesBurned;
     }
 
+    if (sortBy === "rating") {
+      return b.rating - a.rating;
+    }
+
     return 0;
   });
 
@@ -51,6 +55,11 @@ const MyPlan = () => {
   const handleDone = (id: number) => {
     removeFromPlan(id);
     toast.success("Workout marked as done");
+  };
+
+  const handleRemovePlan = (id: number) => {
+    removeFromPlan(id);
+    toast.success("Workout removed from today's plan");
   };
 
   const handleRemoveSaved = (id: number) => {
@@ -135,6 +144,7 @@ const MyPlan = () => {
           >
             <option value="duration">Duration</option>
             <option value="calories">Calories</option>
+            <option value="rating">Rating</option>
           </select>
         </div>
       </div>
@@ -183,15 +193,27 @@ const MyPlan = () => {
                   View Details
                 </Link>
 
+                {/* Today's Plan Buttons */}
                 {activeTab === "plan" && (
-                  <button
-                    onClick={() => handleDone(workout.id)}
-                    className="rounded-lg bg-lime-400 px-4 py-2 text-sm font-bold text-black"
-                  >
-                    ✓ Mark as Done
-                  </button>
+                  <>
+                    <button
+                      onClick={() => handleDone(workout.id)}
+                      className="rounded-lg bg-lime-400 px-4 py-2 text-sm font-bold text-black"
+                    >
+                      ✓ Mark as Done
+                    </button>
+
+                    <button
+                      onClick={() => handleRemovePlan(workout.id)}
+                      className="flex h-9 w-9 items-center justify-center rounded-lg border border-red-400/40 text-sm font-bold text-red-400 transition hover:bg-red-400 hover:text-black"
+                      aria-label={`Remove ${workout.name}`}
+                    >
+                      ×
+                    </button>
+                  </>
                 )}
 
+                {/* Saved Button */}
                 {activeTab === "saved" && (
                   <button
                     onClick={() => handleRemoveSaved(workout.id)}
@@ -228,3 +250,4 @@ const MyPlan = () => {
 };
 
 export default MyPlan;
+
